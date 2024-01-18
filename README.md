@@ -1,4 +1,3 @@
-## Raycasting Demo
+## Raycasting Starter Code
 
-A raycasting demo in JavaScript.
-note: yuo can steal this as long as you credit me lol
+Something you can start with so you don't have to do the annoying parts
