@@ -32,6 +32,7 @@ Objects that exist in the game world/scene. Think about Unity's "GameObjects" bu
   const object1 = new GameObject(); // Creates GameObject at (0, 0)
   hierarchy.add(object1, "default"); // All objects need to be manually added to hierarchy
   hierarchy.add(object2, "default");
+  hierarchy.add(object3, "default");
   ```
   **Methods & Properties**
   * `position` - Position, defaulted to (0, 0)
