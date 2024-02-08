@@ -5,6 +5,9 @@ function Scene() {
     const max_framerate = 60.0;
     const framerate_delta = 1.0 / max_framerate;
 
+    let canvas = null;
+    let ctx = null;
+
     function updateSize() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -33,7 +36,15 @@ function Scene() {
     // =======================================================
 
     ready();
-    setInterval(update, framerate_delta);
+    setInterval(() => {
+        // Error catching, just avoids the output "Script Error" which was annoying af
+        try {
+            update();
+        }
+        catch (error) {
+            alert(`Error: ${error.message}`);
+        }
+    }, framerate_delta);
 
     return {
         canvas: canvas
