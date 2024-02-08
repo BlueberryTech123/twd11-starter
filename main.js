@@ -44,7 +44,7 @@ function Scene() {
         catch (error) {
             alert(`Error: ${error.message}`);
         }
-    }, framerate_delta);
+    }, framerate_delta / 1000);
 
     return {
         canvas: canvas
